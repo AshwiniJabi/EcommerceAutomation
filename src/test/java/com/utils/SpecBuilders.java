@@ -1,6 +1,5 @@
 package com.utils;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -57,5 +56,7 @@ public class SpecBuilders {
 		ResponseSpecification response = new ResponseSpecBuilder().expectContentType(ContentType.JSON).setDefaultParser(Parser.JSON).build();
 		return response;
 	}
+	
+	
 	
 }

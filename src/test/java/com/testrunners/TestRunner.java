@@ -9,6 +9,8 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features = "src/test/java/com/feature/",
 		glue = {"com/stepdefinations"}
+		,tags = "@GetCart"
+		,plugin = {"json:target/jsonReports/CucumberReport.json"}		
 		
 		)
 public class TestRunner {
